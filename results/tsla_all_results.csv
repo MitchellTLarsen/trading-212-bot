@@ -1,0 +1,97 @@
+Strategy,Risk_Config,Params,Pass,OOS_total_return_pct,OOS_annual_return_pct,OOS_sharpe_ratio,OOS_max_drawdown_pct,OOS_total_trades,OOS_win_rate_pct,OOS_avg_win_pct,OOS_avg_loss_pct,OOS_profit_factor,OOS_final_equity,OOS_buy_hold_return_pct
+SMA Crossover,No stops,"fast_period=5, slow_period=30",False,11.23,7.3,0.383,-26.01,9,22.2,18.19,-4.31,1.07,11123.0,29.65
+SMA Crossover,Trail 8%,"fast_period=10, slow_period=100",False,-8.41,-5.65,-0.67,-13.02,2,0.0,0.0,-4.42,0.0,9159.04,29.65
+SMA Crossover,Trail 12%,"fast_period=15, slow_period=30",True,36.15,22.65,0.91,-16.36,7,71.4,10.93,-8.92,2.77,13614.93,29.65
+SMA Crossover,Trail 15%,"fast_period=5, slow_period=75",False,13.22,8.56,0.445,-18.11,4,50.0,10.5,-5.8,1.62,11321.51,29.65
+SMA Crossover,Trail 20%,"fast_period=5, slow_period=30",False,3.48,2.29,0.24,-30.73,9,22.2,14.56,-4.31,0.81,10348.0,29.65
+SMA Crossover,Stop 5% TP 10%,"fast_period=5, slow_period=75",False,-8.42,-5.65,-0.346,-15.7,5,20.0,9.95,-4.48,0.51,9158.3,29.65
+SMA Crossover,Stop 5% TP 15%,"fast_period=5, slow_period=200",False,8.85,5.77,0.713,-5.62,2,50.0,14.94,-5.05,2.59,10884.56,29.65
+SMA Crossover,Stop 7% TP 15%,"fast_period=5, slow_period=200",False,6.64,4.34,0.536,-7.53,2,50.0,14.94,-7.05,1.85,10663.85,29.65
+SMA Crossover,Stop 7% TP 20%,"fast_period=5, slow_period=100",False,-13.37,-9.06,-0.925,-17.19,2,0.0,0.0,-7.05,0.0,8663.01,29.65
+SMA Crossover,Stop 10% TP 25%,"fast_period=10, slow_period=30",False,60.28,36.64,1.334,-17.83,7,42.9,17.29,-3.55,3.58,16028.22,29.65
+SMA Crossover,Trail 10% TP 20%,"fast_period=15, slow_period=30",True,56.26,34.36,1.528,-14.43,7,71.4,13.04,-6.84,4.64,15625.78,29.65
+SMA Crossover,Trail 12% TP 25%,"fast_period=15, slow_period=30",True,44.23,27.42,1.184,-16.28,7,71.4,12.29,-8.92,3.14,14423.07,29.65
+RSI Mean Reversion,No stops,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Trail 8%,"rsi_period=10, oversold=35, overbought=70, trend_sma=100",False,16.7,10.76,1.294,-3.29,1,100.0,17.3,0.0,inf,11670.47,29.65
+RSI Mean Reversion,Trail 12%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Trail 15%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Trail 20%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Stop 5% TP 10%,"rsi_period=10, oversold=35, overbought=65, trend_sma=100",False,9.6,6.26,0.978,-2.71,1,100.0,9.95,0.0,inf,10960.38,29.65
+RSI Mean Reversion,Stop 5% TP 15%,"rsi_period=10, oversold=35, overbought=70, trend_sma=100",False,14.43,9.33,1.149,-3.29,1,100.0,14.94,0.0,inf,11442.98,29.65
+RSI Mean Reversion,Stop 7% TP 15%,"rsi_period=7, oversold=25, overbought=75, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Stop 7% TP 20%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Stop 10% TP 25%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Trail 10% TP 20%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+RSI Mean Reversion,Trail 12% TP 25%,"rsi_period=7, oversold=25, overbought=65, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Bollinger Band Reversion,No stops,"bb_period=20, bb_std=2.0, rsi_period=14, rsi_threshold=30",False,-13.99,-9.49,-0.299,-38.05,1,0.0,0.0,-14.13,0.0,8600.6,29.65
+Bollinger Band Reversion,Trail 8%,"bb_period=20, bb_std=2.0, rsi_period=14, rsi_threshold=30",False,-7.33,-4.91,-0.608,-15.09,3,33.3,2.33,-4.9,0.24,9267.14,29.65
+Bollinger Band Reversion,Trail 12%,"bb_period=30, bb_std=1.5, rsi_period=14, rsi_threshold=30",False,-9.44,-6.35,-0.222,-33.8,4,25.0,14.22,-7.42,0.54,9055.63,29.65
+Bollinger Band Reversion,Trail 15%,"bb_period=15, bb_std=2.5, rsi_period=10, rsi_threshold=30",False,15.94,10.28,0.786,-7.75,2,50.0,19.07,-2.48,6.56,11594.4,29.65
+Bollinger Band Reversion,Trail 20%,"bb_period=20, bb_std=2.0, rsi_period=14, rsi_threshold=30",False,-22.26,-15.35,-1.165,-28.77,2,0.0,0.0,-12.06,0.0,7773.71,29.65
+Bollinger Band Reversion,Stop 5% TP 10%,"bb_period=20, bb_std=2.0, rsi_period=14, rsi_threshold=30",False,8.74,5.7,0.537,-11.06,4,50.0,9.95,-5.05,1.81,10874.46,29.65
+Bollinger Band Reversion,Stop 5% TP 15%,"bb_period=25, bb_std=1.5, rsi_period=14, rsi_threshold=30",False,-1.42,-0.94,0.025,-22.54,4,25.0,14.94,-5.05,0.9,9858.1,29.65
+Bollinger Band Reversion,Stop 7% TP 15%,"bb_period=20, bb_std=2.0, rsi_period=14, rsi_threshold=30",False,-0.54,-0.36,0.058,-21.74,3,33.3,14.94,-7.05,0.96,9945.83,29.65
+Bollinger Band Reversion,Stop 7% TP 20%,"bb_period=20, bb_std=1.5, rsi_period=14, rsi_threshold=30",False,-24.95,-17.3,-1.095,-31.23,4,0.0,0.0,-7.05,0.0,7504.8,29.65
+Bollinger Band Reversion,Stop 10% TP 25%,"bb_period=30, bb_std=2.5, rsi_period=14, rsi_threshold=30",False,-9.95,-6.7,-0.664,-17.49,1,0.0,0.0,-10.05,0.0,9005.23,29.65
+Bollinger Band Reversion,Trail 10% TP 20%,"bb_period=25, bb_std=1.5, rsi_period=14, rsi_threshold=30",False,-12.8,-8.67,-0.549,-21.63,4,50.0,0.3,-7.08,0.04,8719.62,29.65
+Bollinger Band Reversion,Trail 12% TP 25%,"bb_period=30, bb_std=1.5, rsi_period=14, rsi_threshold=30",False,-9.44,-6.35,-0.222,-33.8,4,25.0,14.22,-7.42,0.54,9055.63,29.65
+MACD + RSI,No stops,"macd_fast=8, macd_slow=21, macd_signal=7, rsi_period=14, rsi_upper=70, rsi_lower=25",False,-4.21,-2.8,0.088,-25.46,23,26.1,13.27,-4.26,0.94,9579.16,29.65
+MACD + RSI,Trail 8%,"macd_fast=8, macd_slow=21, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,-31.54,-22.18,-0.854,-40.31,23,17.4,12.32,-4.32,0.49,6845.74,29.65
+MACD + RSI,Trail 12%,"macd_fast=16, macd_slow=30, macd_signal=9, rsi_period=10, rsi_upper=70, rsi_lower=25",False,-2.65,-1.76,0.052,-24.28,11,27.3,9.97,-3.66,0.91,9734.82,29.65
+MACD + RSI,Trail 15%,"macd_fast=8, macd_slow=21, macd_signal=7, rsi_period=14, rsi_upper=70, rsi_lower=25",False,-3.46,-2.31,0.091,-24.73,23,30.4,11.53,-4.52,0.95,9653.59,29.65
+MACD + RSI,Trail 20%,"macd_fast=8, macd_slow=21, macd_signal=7, rsi_period=14, rsi_upper=70, rsi_lower=25",False,-8.55,-5.74,-0.003,-29.04,23,26.1,13.27,-4.53,0.88,9145.48,29.65
+MACD + RSI,Stop 5% TP 10%,"macd_fast=8, macd_slow=21, macd_signal=9, rsi_period=10, rsi_upper=65, rsi_lower=25",False,-13.52,-9.16,-0.327,-28.6,22,27.3,8.3,-3.81,0.74,8648.27,29.65
+MACD + RSI,Stop 5% TP 15%,"macd_fast=8, macd_slow=26, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,10.82,7.03,0.394,-20.62,22,27.3,12.47,-3.63,1.18,11081.9,29.65
+MACD + RSI,Stop 7% TP 15%,"macd_fast=8, macd_slow=26, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,3.56,2.34,0.221,-23.81,22,27.3,12.47,-4.04,1.06,10355.64,29.65
+MACD + RSI,Stop 7% TP 20%,"macd_fast=8, macd_slow=26, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,15.14,9.78,0.467,-27.97,22,27.3,14.64,-4.04,1.22,11514.46,29.65
+MACD + RSI,Stop 10% TP 25%,"macd_fast=8, macd_slow=26, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,14.35,9.28,0.441,-25.42,22,27.3,15.65,-4.39,1.19,11434.85,29.65
+MACD + RSI,Trail 10% TP 20%,"macd_fast=8, macd_slow=26, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,-9.16,-6.16,-0.082,-25.05,22,27.3,11.37,-4.38,0.87,9083.8,29.65
+MACD + RSI,Trail 12% TP 25%,"macd_fast=8, macd_slow=26, macd_signal=9, rsi_period=14, rsi_upper=70, rsi_lower=25",False,10.54,6.85,0.37,-25.02,22,27.3,15.26,-4.4,1.14,11053.69,29.65
+EMA Pullback,No stops,"fast_ema=15, slow_ema=100, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,1.6,1.05,0.206,-28.39,4,25.0,27.14,-9.6,0.74,10159.66,29.65
+EMA Pullback,Trail 8%,"fast_ema=30, slow_ema=100, atr_period=10, pullback_atr_mult=1.5, stop_atr_mult=2.0",False,-16.88,-11.51,-0.49,-28.45,11,36.4,2.74,-4.11,0.4,8312.31,29.65
+EMA Pullback,Trail 12%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,-14.54,-9.88,-0.252,-31.88,8,25.0,14.3,-7.98,0.47,8545.75,29.65
+EMA Pullback,Trail 15%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,-9.88,-6.65,-0.067,-30.03,6,16.7,24.99,-7.95,0.51,9011.78,29.65
+EMA Pullback,Trail 20%,"fast_ema=30, slow_ema=100, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,12.41,8.05,0.404,-23.66,2,50.0,25.64,-10.56,2.2,11240.82,29.65
+EMA Pullback,Stop 5% TP 10%,"fast_ema=15, slow_ema=100, atr_period=10, pullback_atr_mult=1.0, stop_atr_mult=2.0",False,5.83,3.82,0.295,-18.15,13,38.5,9.95,-5.05,1.15,10583.14,29.65
+EMA Pullback,Stop 5% TP 15%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=1.0, stop_atr_mult=2.0",False,-12.49,-8.45,-0.311,-22.9,8,12.5,14.94,-5.05,0.37,8751.46,29.65
+EMA Pullback,Stop 7% TP 15%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=1.0, stop_atr_mult=2.0",False,-20.59,-14.15,-0.554,-27.44,8,12.5,14.94,-6.47,0.28,7940.64,29.65
+EMA Pullback,Stop 7% TP 20%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,-17.83,-12.19,-0.458,-27.44,8,12.5,19.94,-6.47,0.37,8216.53,29.65
+EMA Pullback,Stop 10% TP 25%,"fast_ema=15, slow_ema=100, atr_period=10, pullback_atr_mult=1.0, stop_atr_mult=2.0",False,-10.51,-7.08,-0.103,-33.27,7,14.3,24.94,-6.84,0.49,8948.91,29.65
+EMA Pullback,Trail 10% TP 20%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,-18.14,-12.41,-0.462,-31.71,9,22.2,11.16,-6.91,0.38,8185.86,29.65
+EMA Pullback,Trail 12% TP 25%,"fast_ema=15, slow_ema=40, atr_period=10, pullback_atr_mult=0.5, stop_atr_mult=2.0",False,-16.81,-11.47,-0.385,-31.88,8,25.0,12.52,-7.98,0.42,8318.56,29.65
+Momentum Breakout,No stops,"lookback=10, vol_mult=1.0, trend_sma=20",False,3.83,2.52,0.308,-46.97,0,0.0,0.0,0.0,0,10383.14,29.65
+Momentum Breakout,Trail 8%,"lookback=30, vol_mult=1.2, trend_sma=100",False,12.75,8.27,0.71,-8.31,2,50.0,16.64,-2.91,4.86,11275.4,29.65
+Momentum Breakout,Trail 12%,"lookback=10, vol_mult=1.5, trend_sma=20",False,-18.98,-13.0,-0.708,-24.18,4,25.0,1.21,-7.12,0.05,8101.7,29.65
+Momentum Breakout,Trail 15%,"lookback=10, vol_mult=1.5, trend_sma=20",False,-19.05,-13.05,-0.486,-31.21,3,0.0,0.0,-10.07,0.0,8094.69,29.65
+Momentum Breakout,Trail 20%,"lookback=10, vol_mult=1.5, trend_sma=20",False,24.88,15.84,0.634,-22.87,1,100.0,11.93,0.0,inf,12488.34,29.65
+Momentum Breakout,Stop 5% TP 10%,"lookback=40, vol_mult=2.0, trend_sma=20",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Momentum Breakout,Stop 5% TP 15%,"lookback=40, vol_mult=2.0, trend_sma=20",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Momentum Breakout,Stop 7% TP 15%,"lookback=40, vol_mult=2.0, trend_sma=20",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Momentum Breakout,Stop 7% TP 20%,"lookback=15, vol_mult=1.2, trend_sma=50",False,15.27,9.86,0.64,-22.81,5,40.0,19.94,-7.05,1.55,11527.41,29.65
+Momentum Breakout,Stop 10% TP 25%,"lookback=10, vol_mult=1.2, trend_sma=20",False,14.63,9.46,0.485,-25.25,6,33.3,24.94,-10.04,1.06,11462.98,29.65
+Momentum Breakout,Trail 10% TP 20%,"lookback=40, vol_mult=2.0, trend_sma=20",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Momentum Breakout,Trail 12% TP 25%,"lookback=10, vol_mult=1.2, trend_sma=20",False,7.24,4.73,0.314,-21.06,7,42.9,17.03,-9.13,1.18,10723.65,29.65
+Mean Reversion ROC,No stops,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Trail 8%,"roc_period=7, roc_threshold=-15, rsi_period=7, rsi_threshold=40, exit_sma=15, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Trail 12%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Trail 15%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Trail 20%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Stop 5% TP 10%,"roc_period=7, roc_threshold=-15, rsi_period=7, rsi_threshold=40, exit_sma=10, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Stop 5% TP 15%,"roc_period=7, roc_threshold=-15, rsi_period=7, rsi_threshold=40, exit_sma=15, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Stop 7% TP 15%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Stop 7% TP 20%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Stop 10% TP 25%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Trail 10% TP 20%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Mean Reversion ROC,Trail 12% TP 25%,"roc_period=5, roc_threshold=-5, rsi_period=10, rsi_threshold=35, exit_sma=20, trend_sma=100",False,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0,10000.0,29.65
+Consolidation Breakout,No stops,"bb_period=15, bb_std=1.5, squeeze_lookback=30, squeeze_percentile=30, trend_sma=30",False,-8.5,-5.71,-0.236,-26.85,8,12.5,19.82,-3.8,0.7,9149.62,29.65
+Consolidation Breakout,Trail 8%,"bb_period=20, bb_std=2.0, squeeze_lookback=30, squeeze_percentile=15, trend_sma=30",False,16.05,10.35,0.986,-5.62,1,100.0,16.64,0.0,inf,11605.45,29.65
+Consolidation Breakout,Trail 12%,"bb_period=20, bb_std=2.0, squeeze_lookback=30, squeeze_percentile=25, trend_sma=30",False,5.03,3.3,0.299,-14.59,2,50.0,11.57,-5.58,1.82,10503.07,29.65
+Consolidation Breakout,Trail 15%,"bb_period=15, bb_std=1.5, squeeze_lookback=30, squeeze_percentile=30, trend_sma=30",False,-8.5,-5.71,-0.236,-26.85,8,12.5,19.82,-3.8,0.7,9149.62,29.65
+Consolidation Breakout,Trail 20%,"bb_period=15, bb_std=1.5, squeeze_lookback=30, squeeze_percentile=30, trend_sma=30",False,-8.5,-5.71,-0.236,-26.85,8,12.5,19.82,-3.8,0.7,9149.62,29.65
+Consolidation Breakout,Stop 5% TP 10%,"bb_period=20, bb_std=2.0, squeeze_lookback=30, squeeze_percentile=20, trend_sma=30",False,20.35,13.04,1.347,-4.33,2,100.0,9.95,0.0,inf,12035.16,29.65
+Consolidation Breakout,Stop 5% TP 15%,"bb_period=20, bb_std=2.5, squeeze_lookback=50, squeeze_percentile=20, trend_sma=30",False,-0.01,-0.0,0.061,-7.68,1,0.0,0.0,-0.01,0.0,9999.46,29.65
+Consolidation Breakout,Stop 7% TP 15%,"bb_period=20, bb_std=2.5, squeeze_lookback=50, squeeze_percentile=20, trend_sma=30",False,-0.01,-0.0,0.061,-7.68,1,0.0,0.0,-0.01,0.0,9999.46,29.65
+Consolidation Breakout,Stop 7% TP 20%,"bb_period=20, bb_std=2.0, squeeze_lookback=30, squeeze_percentile=25, trend_sma=30",False,24.28,15.47,1.264,-9.17,1,100.0,19.94,0.0,inf,12427.75,29.65
+Consolidation Breakout,Stop 10% TP 25%,"bb_period=15, bb_std=1.5, squeeze_lookback=30, squeeze_percentile=30, trend_sma=30",False,-7.22,-4.84,-0.178,-25.48,8,12.5,24.94,-4.13,0.77,9278.35,29.65
+Consolidation Breakout,Trail 10% TP 20%,"bb_period=20, bb_std=2.0, squeeze_lookback=30, squeeze_percentile=15, trend_sma=30",False,19.24,12.35,1.285,-4.25,1,100.0,19.94,0.0,inf,11924.06,29.65
+Consolidation Breakout,Trail 12% TP 25%,"bb_period=20, bb_std=1.5, squeeze_lookback=30, squeeze_percentile=25, trend_sma=50",False,27.55,17.47,0.942,-11.61,6,33.3,24.94,-4.78,2.13,12754.52,29.65
