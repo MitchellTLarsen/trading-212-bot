@@ -6,7 +6,9 @@ Signals:
    -1  = go short
     0  = close position / no action
 
-Supports max holding periods, stop loss, and take profit for both directions.
+Risk-per-trade position sizing: instead of betting a fixed % of capital,
+sizes each position so the stop loss = X% of account. This naturally
+caps drawdowns.
 """
 
 import pandas as pd
@@ -16,21 +18,22 @@ import numpy as np
 class ForexEngine:
     def __init__(self, initial_capital=10000, max_hold_days=10,
                  stop_loss_pct=1.0, take_profit_pct=2.0,
-                 spread_pips=1.5, leverage=1):
+                 spread_pips=1.5, leverage=1, risk_per_trade_pct=2.0):
         self.initial_capital = initial_capital
         self.max_hold_days = max_hold_days
         self.stop_loss_pct = stop_loss_pct / 100
         self.take_profit_pct = take_profit_pct / 100
-        self.spread_cost = spread_pips * 0.0001  # approximate spread cost
+        self.spread_cost = spread_pips * 0.0001
         self.leverage = leverage
+        self.risk_per_trade_pct = risk_per_trade_pct / 100  # max account loss per trade
 
     def run(self, data, signals):
         df = data.copy()
         df["signal"] = signals
 
         cash = self.initial_capital
-        position = 0       # +1 = long, -1 = short, 0 = flat
-        position_size = 0   # notional value
+        position = 0
+        position_size = 0
         entry_price = 0
         entry_date = None
         bars_held = 0
@@ -49,49 +52,42 @@ class ForexEngine:
             exit_price = None
             exit_reason = None
 
-            # Check exits on open positions
             if position != 0:
                 bars_held += 1
 
-                if position == 1:  # long
-                    # Stop loss
+                if position == 1:
                     stop = entry_price * (1 - self.stop_loss_pct)
                     if low <= stop:
                         exit_triggered = True
                         exit_price = stop
                         exit_reason = "stop_loss"
 
-                    # Take profit
-                    if not exit_triggered:
+                    if not exit_triggered and self.take_profit_pct > 0:
                         tp = entry_price * (1 + self.take_profit_pct)
                         if high >= tp:
                             exit_triggered = True
                             exit_price = tp
                             exit_reason = "take_profit"
 
-                elif position == -1:  # short
-                    # Stop loss (price goes up)
+                elif position == -1:
                     stop = entry_price * (1 + self.stop_loss_pct)
                     if high >= stop:
                         exit_triggered = True
                         exit_price = stop
                         exit_reason = "stop_loss"
 
-                    # Take profit (price goes down)
-                    if not exit_triggered:
+                    if not exit_triggered and self.take_profit_pct > 0:
                         tp = entry_price * (1 - self.take_profit_pct)
                         if low <= tp:
                             exit_triggered = True
                             exit_price = tp
                             exit_reason = "take_profit"
 
-                # Time exit
                 if not exit_triggered and bars_held >= self.max_hold_days:
                     exit_triggered = True
                     exit_price = close
                     exit_reason = "time_exit"
 
-                # Signal reversal closes position
                 if not exit_triggered and signal != 0 and signal != position:
                     exit_triggered = True
                     exit_price = close
@@ -100,11 +96,13 @@ class ForexEngine:
             # Execute exit
             if exit_triggered and position != 0:
                 if position == 1:
-                    pnl_pct = (exit_price / entry_price - 1) * 100 * self.leverage
+                    pnl_raw = (exit_price / entry_price - 1)
                 else:
-                    pnl_pct = (entry_price / exit_price - 1) * 100 * self.leverage
+                    pnl_raw = (entry_price / exit_price - 1)
 
-                pnl = position_size * (pnl_pct / 100) - (position_size * self.spread_cost)
+                pnl = position_size * pnl_raw * self.leverage
+                pnl -= position_size * self.spread_cost  # spread cost
+                pnl_pct = (pnl / cash) * 100 if cash > 0 else 0
 
                 trades.append({
                     "entry_date": entry_date,
@@ -112,6 +110,7 @@ class ForexEngine:
                     "direction": "long" if position == 1 else "short",
                     "entry_price": entry_price,
                     "exit_price": exit_price,
+                    "position_size": position_size,
                     "pnl": pnl,
                     "pnl_pct": round(pnl_pct, 4),
                     "bars_held": bars_held,
@@ -119,33 +118,44 @@ class ForexEngine:
                 })
 
                 cash += pnl
+                if cash < 0:
+                    cash = 0
                 position = 0
                 position_size = 0
                 entry_price = 0
                 bars_held = 0
 
             # Enter new position
-            if position == 0 and signal != 0:
-                exec_price = close
-                entry_price = exec_price
+            if position == 0 and signal != 0 and cash > 0:
+                entry_price = close
                 entry_date = date
                 position = signal
-                position_size = cash * 0.95  # use 95% of capital
                 bars_held = 0
-                cash -= position_size * self.spread_cost  # pay spread on entry
+
+                # Risk-based position sizing:
+                # If stop loss = 1% and we risk 2% of account,
+                # position size = (account * risk%) / stop_loss%
+                # This means if stopped out, we lose exactly risk_per_trade of account
+                if self.stop_loss_pct > 0:
+                    position_size = min(
+                        (cash * self.risk_per_trade_pct) / self.stop_loss_pct,
+                        cash * self.leverage  # can't exceed leveraged capital
+                    )
+                else:
+                    position_size = cash * 0.1  # small default if no stop
+
+                cash -= position_size * self.spread_cost
 
             # Track equity
             unrealized = 0
-            if position != 0:
+            if position != 0 and position_size > 0:
                 if position == 1:
                     unrealized = position_size * ((close / entry_price - 1) * self.leverage)
                 else:
                     unrealized = position_size * ((entry_price / close - 1) * self.leverage)
 
-            equity_curve.append({
-                "date": date,
-                "equity": cash + position_size + unrealized if position != 0 else cash,
-            })
+            equity = cash + (position_size + unrealized if position != 0 else 0)
+            equity_curve.append({"date": date, "equity": max(equity, 0)})
 
         eq_df = pd.DataFrame(equity_curve).set_index("date")
         trades_df = pd.DataFrame(trades) if trades else pd.DataFrame()
@@ -199,8 +209,20 @@ class ForexResult:
             short_trades = self.trades[self.trades["direction"] == "short"]
             long_wr = (len(long_trades[long_trades["pnl"] > 0]) / len(long_trades) * 100) if len(long_trades) > 0 else 0
             short_wr = (len(short_trades[short_trades["pnl"] > 0]) / len(short_trades) * 100) if len(short_trades) > 0 else 0
+
+            # Max consecutive losses
+            pnl_signs = (self.trades["pnl"] > 0).astype(int)
+            max_consec_loss = 0
+            current_streak = 0
+            for s in pnl_signs:
+                if s == 0:
+                    current_streak += 1
+                    max_consec_loss = max(max_consec_loss, current_streak)
+                else:
+                    current_streak = 0
         else:
-            win_rate = avg_win = avg_loss = avg_hold = pf = n_trades = long_wr = short_wr = 0
+            win_rate = avg_win = avg_loss = avg_hold = pf = n_trades = 0
+            long_wr = short_wr = max_consec_loss = 0
 
         return {
             "total_return_pct": round(total_ret, 2),
@@ -209,12 +231,12 @@ class ForexResult:
             "max_drawdown_pct": round(dd, 2),
             "total_trades": n_trades,
             "win_rate_pct": round(win_rate, 1),
-            "avg_win_pct": round(avg_win, 4),
-            "avg_loss_pct": round(avg_loss, 4),
+            "avg_win_pct": round(avg_win, 2),
+            "avg_loss_pct": round(avg_loss, 2),
             "avg_hold_days": round(avg_hold, 1) if avg_hold else 0,
             "profit_factor": round(pf, 2) if pf != float("inf") else "inf",
             "long_win_rate": round(long_wr, 1),
             "short_win_rate": round(short_wr, 1),
+            "max_consec_losses": max_consec_loss,
             "final_equity": round(final, 2),
-            "buy_hold_pct": round(bh, 2),
         }
