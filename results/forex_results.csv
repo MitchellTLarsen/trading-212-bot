@@ -1,0 +1,101 @@
+Strategy,Pair,Config,Params,Profitable,OOS_total_return_pct,OOS_annual_return_pct,OOS_sharpe_ratio,OOS_max_drawdown_pct,OOS_total_trades,OOS_win_rate_pct,OOS_avg_win_pct,OOS_avg_loss_pct,OOS_avg_hold_days,OOS_profit_factor,OOS_long_win_rate,OOS_short_win_rate,OOS_final_equity,OOS_buy_hold_pct
+RSI Reversal,EURGBP=X,10d SL1.5% 3% 10x,"rsi_period=5, oversold=25, overbought=75",True,220.49,115.82,1.776,-56.85,27,55.6,8.4577,-5.5695,9.2,1.88,58.3,53.3,32049.26,4.22
+RSI Reversal,NZDUSD=X,7d SL0.7% 1.5% 10x,"rsi_period=10, oversold=30, overbought=70",True,194.14,103.92,1.515,-53.0,16,75.0,12.6753,-6.9756,4.2,4.55,80.0,66.7,29413.56,2.11
+Triple EMA,GBPJPY=X,7d SL0.7% 1.5% 10x,"fast=3, medium=10, slow=30",True,150.27,83.29,1.979,-59.9,31,45.2,10.4025,-6.166,3.9,1.23,55.0,27.3,25026.54,10.27
+Inside Bar Breakout,USDJPY=X,5d SL1% TP2% 10x,,True,142.43,79.48,1.282,-60.03,10,50.0,15.4314,-8.9787,3.0,1.48,33.3,75.0,24243.1,3.28
+Consecutive Candles,USDCHF=X,10d SL1.5% 3% 10x,n_candles=4,True,126.05,71.38,1.4,-59.27,20,70.0,12.7176,-12.1604,7.8,2.23,57.1,76.9,22605.2,-11.84
+Consecutive Candles,EURJPY=X,10d SL1.5% TP3%,n_candles=3,True,106.61,61.49,1.669,-50.39,45,62.2,0.8231,-0.8959,6.9,1.44,65.2,59.1,20660.52,14.92
+Inside Bar Breakout,EURUSD=X,10d SL1.5% TP3%,,True,105.15,60.74,1.29,-49.45,13,69.2,1.1893,-1.218,8.1,2.09,85.7,50.0,20515.26,11.29
+Consecutive Candles,USDJPY=X,10d SL1.5% TP3%,n_candles=3,True,100.79,58.48,1.739,-52.6,43,48.8,1.4437,-1.1631,6.6,1.14,56.5,40.0,20079.32,3.28
+SMA Crossover,EURGBP=X,5d SL1% TP2%,"fast=15, slow=30",True,96.01,55.97,1.354,-49.75,15,46.7,0.5196,-0.3272,4.9,1.28,57.1,37.5,19600.89,4.22
+MACD Crossover,USDCAD=X,10d SL1% TP2% 10x,"fast=8, slow=17, signal_period=9",True,95.75,55.83,1.499,-60.99,38,50.0,10.3521,-5.7076,6.9,1.65,57.9,42.1,19574.5,-1.17
+Triple EMA,EURUSD=X,10d SL1% TP2% 10x,"fast=5, medium=13, slow=50",True,94.57,55.22,1.675,-66.53,23,43.5,11.9337,-7.9994,5.7,1.02,53.3,25.0,19457.3,11.29
+Triple EMA,EURGBP=X,10d SL1% TP2%,"fast=8, medium=21, slow=55",True,90.26,52.94,1.497,-50.21,18,50.0,0.4565,-0.6646,9.1,0.64,54.5,42.9,19026.31,4.22
+Keltner Breakout,EURGBP=X,10d SL1% TP2%,"ema_period=20, atr_period=14, atr_mult=1.0",True,86.18,50.76,1.689,-50.58,26,38.5,0.5782,-0.5938,8.4,0.57,40.0,36.4,18618.36,4.22
+Keltner Breakout,USDCAD=X,7d SL0.7% TP1.5%,"ema_period=20, atr_period=14, atr_mult=1.5",True,84.8,50.02,1.69,-52.09,27,33.3,0.731,-0.6333,4.5,0.55,28.6,38.5,18479.69,-1.17
+MACD Crossover,EURGBP=X,5d SL0.5% TP1%,"fast=5, slow=15, signal_period=5",True,81.45,48.22,2.186,-52.67,63,36.5,0.4549,-0.4034,3.2,0.6,35.5,37.5,18144.52,4.22
+Triple EMA,GBPUSD=X,10d SL1.5% 3% 10x,"fast=5, medium=13, slow=50",True,71.17,42.62,1.541,-63.3,18,44.4,9.6256,-8.0515,8.4,0.85,50.0,33.3,17117.23,6.76
+Bollinger Reversal,GBPUSD=X,10d SL1.5% 3% 10x,"period=20, num_std=2.5",True,70.39,42.19,0.875,-50.49,5,80.0,16.2569,-1.9275,7.0,24.53,100.0,66.7,17038.56,6.76
+Z-Score Reversion,GBPUSD=X,10d SL1.5% 3% 10x,"lookback=20, z_entry=2.5",True,70.39,42.19,0.875,-50.49,5,80.0,16.2569,-1.9275,7.0,24.53,100.0,66.7,17038.56,6.76
+Triple EMA,USDCAD=X,10d SL1% TP2% 10x,"fast=8, medium=21, slow=55",True,65.3,39.37,1.395,-61.91,14,42.9,7.0163,-6.9261,7.8,0.67,33.3,50.0,16529.57,-1.17
+Consecutive Candles,EURUSD=X,10d SL1.5% 3% 10x,n_candles=5,True,64.12,38.71,1.157,-56.07,10,60.0,15.0259,-7.1436,9.1,2.44,57.1,66.7,16411.97,11.29
+Bollinger Reversal,EURUSD=X,10d SL1.5% 3% 10x,"period=25, num_std=2.5",True,51.26,31.43,1.136,-66.0,9,33.3,13.3457,-10.1354,8.1,0.54,66.7,16.7,15126.02,11.29
+Consecutive Candles,USDCAD=X,10d SL1.5% 3% 10x,n_candles=4,True,50.74,31.14,1.57,-66.5,23,52.2,5.3748,-7.4838,8.8,0.73,44.4,57.1,15074.1,-1.17
+Consecutive Candles,EURGBP=X,10d SL1% TP2% 10x,n_candles=3,True,49.3,30.3,1.563,-69.99,43,51.2,5.6796,-6.7181,6.6,0.82,55.0,47.8,14929.8,4.22
+Bollinger Reversal,AUDUSD=X,7d SL0.7% 1.5% 10x,"period=30, num_std=2.0",True,48.52,29.86,1.248,-56.97,23,47.8,12.4516,-6.9675,2.7,1.4,60.0,38.5,14851.94,10.31
+Z-Score Reversion,AUDUSD=X,7d SL0.7% 1.5% 10x,"lookback=30, z_entry=2.0",True,48.52,29.86,1.248,-56.97,23,47.8,12.4516,-6.9675,2.7,1.4,60.0,38.5,14851.94,10.31
+Bollinger Reversal,NZDUSD=X,10d SL1.5% 3% 10x,"period=20, num_std=2.5",True,45.8,28.28,0.797,-55.98,4,75.0,20.9932,-14.7783,4.8,2.92,100.0,0.0,14580.45,2.11
+Z-Score Reversion,NZDUSD=X,10d SL1.5% 3% 10x,"lookback=20, z_entry=2.5",True,45.8,28.28,0.797,-55.98,4,75.0,20.9932,-14.7783,4.8,2.92,100.0,0.0,14580.45,2.11
+Inside Bar Breakout,EURJPY=X,5d SL1% TP2% 10x,,True,31.3,19.7,1.42,-67.38,15,33.3,4.1013,-5.9491,4.5,0.31,30.0,40.0,13129.86,14.92
+Bollinger Reversal,USDCAD=X,7d SL0.7% 1.5% 10x,"period=15, num_std=2.0",True,29.87,18.84,1.469,-59.64,24,45.8,9.062,-4.9522,4.6,1.36,30.8,63.6,12987.35,-1.17
+Z-Score Reversion,USDCAD=X,7d SL0.7% 1.5% 10x,"lookback=15, z_entry=2.0",True,29.87,18.84,1.469,-59.64,24,45.8,9.062,-4.9522,4.6,1.36,30.8,63.6,12987.35,-1.17
+RSI Reversal,USDCAD=X,5d SL1% TP2% 10x,"rsi_period=14, oversold=30, overbought=70",True,26.88,17.03,1.197,-53.55,12,58.3,6.5487,-3.4976,4.6,2.5,60.0,57.1,12687.86,-1.17
+SMA Crossover,USDCHF=X,5d SL1% TP2% 10x,"fast=20, slow=50",True,25.08,15.93,0.888,-52.88,9,66.7,5.3221,-2.1904,5.0,4.86,50.0,80.0,12508.49,-11.84
+Triple EMA,EURJPY=X,5d SL1% TP2% 10x,"fast=5, medium=10, slow=20",True,21.17,13.52,1.714,-72.88,27,37.0,9.5167,-7.8072,3.6,0.69,41.2,30.0,12116.78,14.92
+SMA Crossover,EURUSD=X,10d SL1% TP2% 10x,"fast=5, slow=30",True,20.37,13.02,1.354,-74.83,20,35.0,9.9176,-8.3276,5.3,0.54,30.0,40.0,12036.56,11.29
+Triple EMA,USDJPY=X,10d SL1.5% 3% 10x,"fast=8, medium=21, slow=55",True,17.62,11.31,1.257,-72.37,13,38.5,13.0897,-13.202,5.6,0.5,50.0,28.6,11761.65,3.28
+MACD Crossover,USDJPY=X,7d SL0.7% 1.5% 10x,"fast=12, slow=30, signal_period=9",True,17.46,11.21,1.871,-66.8,40,37.5,12.4068,-6.0428,3.1,1.09,55.0,20.0,11745.98,3.28
+RSI Reversal,EURUSD=X,10d SL1.5% 3% 10x,"rsi_period=7, oversold=25, overbought=75",True,13.53,8.75,1.398,-71.15,17,58.8,10.2826,-11.0709,9.2,1.21,75.0,44.4,11353.43,11.29
+RSI Reversal,GBPJPY=X,7d SL0.7% 1.5% 10x,"rsi_period=14, oversold=30, overbought=70",True,13.17,8.52,0.82,-57.11,6,50.0,10.3185,-5.0841,6.0,1.73,0.0,50.0,11317.14,10.27
+SMA Crossover,USDJPY=X,10d SL1.5% 3% 10x,"fast=5, slow=30",True,12.74,8.24,1.449,-78.25,21,28.6,21.6056,-10.8116,6.5,0.72,20.0,36.4,11273.65,3.28
+Consecutive Candles,AUDUSD=X,10d SL1% TP2% 10x,n_candles=5,True,12.64,8.18,1.056,-59.19,13,46.2,15.4538,-9.901,5.4,1.19,100.0,12.5,11264.37,10.31
+Bollinger Reversal,EURJPY=X,10d SL1.5% 3% 10x,"period=15, num_std=2.0",True,12.6,8.15,1.341,-59.0,16,56.2,9.0191,-8.6044,8.9,1.19,60.0,54.5,11259.87,14.92
+Z-Score Reversion,EURJPY=X,10d SL1.5% 3% 10x,"lookback=15, z_entry=2.0",True,12.6,8.15,1.341,-59.0,16,56.2,9.0191,-8.6044,8.9,1.19,60.0,54.5,11259.87,14.92
+RSI Reversal,GBPUSD=X,7d SL0.7% 1.5% 10x,"rsi_period=5, oversold=20, overbought=80",True,11.38,7.38,1.469,-64.13,18,50.0,7.6212,-5.7529,4.7,1.2,50.0,50.0,11138.2,6.76
+RSI Reversal,USDJPY=X,5d SL1% TP2%,"rsi_period=14, oversold=30, overbought=70",True,10.46,6.79,0.942,-48.77,7,100.0,1.5391,0.0,3.6,inf,100.0,100.0,11045.75,3.28
+Bollinger Reversal,EURGBP=X,10d SL1.5% 3% 10x,"period=30, num_std=2.0",True,10.31,6.69,1.209,-58.26,15,53.3,9.3258,-8.0267,8.7,1.21,100.0,41.7,11030.66,4.22
+SMA Crossover,EURJPY=X,10d SL1.5% 3% 10x,"fast=10, slow=30",True,8.43,5.49,1.008,-65.41,19,52.6,8.0832,-6.9521,6.9,1.11,66.7,40.0,10843.15,14.92
+Inside Bar Breakout,NZDUSD=X,5d SL0.5% TP1%,,True,8.29,5.4,1.573,-49.23,21,61.9,1.0054,-0.4988,1.4,3.07,60.0,63.6,10828.81,2.11
+Bollinger Reversal,GBPJPY=X,5d SL1% TP2%,"period=20, num_std=2.0",True,8.05,5.25,1.449,-49.3,21,61.9,1.1439,-0.7437,3.9,2.43,60.0,63.6,10805.38,10.27
+Z-Score Reversion,GBPJPY=X,5d SL1% TP2%,"lookback=20, z_entry=2.0",True,8.05,5.25,1.449,-49.3,21,61.9,1.1439,-0.7437,3.9,2.43,60.0,63.6,10805.38,10.27
+Consecutive Candles,GBPUSD=X,7d SL0.7% 1.5% 10x,n_candles=5,True,3.0,1.97,0.986,-59.59,11,45.5,9.9482,-6.9675,3.9,1.09,50.0,42.9,10300.49,6.76
+Bollinger Reversal,USDJPY=X,5d SL1% TP2%,"period=30, num_std=2.0",True,1.75,1.15,1.396,-50.89,24,54.2,1.0512,-0.9973,3.2,1.2,42.9,70.0,10175.0,3.28
+Z-Score Reversion,USDJPY=X,5d SL1% TP2%,"lookback=30, z_entry=2.0",True,1.75,1.15,1.396,-50.89,24,54.2,1.0512,-0.9973,3.2,1.2,42.9,70.0,10175.0,3.28
+Inside Bar Breakout,AUDUSD=X,5d SL0.5% TP1%,,True,0.93,0.61,1.443,-49.78,18,38.9,1.0058,-0.4986,1.7,1.22,37.5,40.0,10092.5,10.31
+Consecutive Candles,GBPJPY=X,10d SL1% TP2% 10x,n_candles=5,True,0.9,0.6,0.99,-60.18,10,60.0,5.8683,-7.5584,7.8,1.03,0.0,60.0,10090.4,10.27
+Inside Bar Breakout,EURGBP=X,7d SL0.7% TP1.5%,,True,0.64,0.42,0.989,-49.46,10,60.0,0.5848,-0.6308,6.1,1.31,33.3,100.0,10063.57,4.22
+Inside Bar Breakout,GBPUSD=X,5d SL0.5% TP1%,,True,0.13,0.09,1.398,-49.89,18,33.3,1.0034,-0.4415,2.4,1.07,33.3,33.3,10013.44,6.76
+Momentum Breakout,EURUSD=X,5d SL0.5% TP1%,"lookback=10, vol_mult=1.0",False,-0.0,-0.0,1.681,-50.29,27,40.7,0.8041,-0.4989,2.0,1.05,50.0,22.2,9999.51,11.29
+RSI Reversal,USDCHF=X,10d SL1.5% 3% 10x,"rsi_period=7, oversold=25, overbought=75",False,-0.23,-0.15,1.332,-76.13,15,53.3,13.3315,-13.1318,7.7,1.0,50.0,57.1,9976.55,-11.84
+MACD Crossover,GBPJPY=X,10d SL1.5% 3% 10x,"fast=16, slow=30, signal_period=9",False,-0.3,-0.2,1.592,-87.64,37,35.1,13.6691,-9.0166,6.6,0.79,38.9,31.6,9970.44,10.27
+Triple EMA,USDCHF=X,5d SL0.5% TP1%,"fast=3, medium=8, slow=21",False,-1.01,-0.67,2.195,-51.06,41,39.0,0.7514,-0.4711,2.3,0.96,18.8,52.0,9899.07,-11.84
+Consecutive Candles,NZDUSD=X,7d SL0.7% TP1.5%,n_candles=3,False,-2.02,-1.34,1.813,-53.45,78,38.5,1.1335,-0.6978,2.8,0.97,38.1,38.9,9797.69,2.11
+Z-Score Reversion,EURUSD=X,10d SL1.5% TP3%,"lookback=15, z_entry=2.0",False,-3.07,-2.04,1.392,-51.83,21,38.1,1.1419,-0.8952,8.3,0.75,63.6,10.0,9693.45,11.29
+Momentum Breakout,USDCAD=X,5d SL1% TP2%,"lookback=20, vol_mult=1.0",False,-3.85,-2.56,1.478,-50.69,18,38.9,0.4189,-0.5901,4.3,0.42,25.0,50.0,9614.92,-1.17
+Inside Bar Breakout,USDCHF=X,10d SL1.5% TP3%,,False,-4.21,-2.8,1.148,-52.07,16,37.5,1.327,-1.1862,6.8,0.65,16.7,50.0,9578.54,-11.84
+Momentum Breakout,EURGBP=X,10d SL1% TP2%,"lookback=30, vol_mult=1.0",False,-5.42,-3.61,1.037,-51.56,9,11.1,0.4562,-0.7526,6.7,0.07,20.0,0.0,9458.22,4.22
+Keltner Breakout,EURJPY=X,10d SL1.5% TP3%,"ema_period=15, atr_period=10, atr_mult=1.0",False,-5.87,-3.91,1.479,-52.35,25,48.0,0.8441,-1.1987,8.0,0.62,57.9,16.7,9413.39,14.92
+Keltner Breakout,USDCHF=X,10d SL1.5% 3% 10x,"ema_period=20, atr_period=14, atr_mult=2.0",False,-6.45,-4.31,0.847,-64.02,6,50.0,11.7966,-11.9588,8.0,0.83,0.0,50.0,9354.77,-11.84
+SMA Crossover,GBPJPY=X,10d SL1.5% 3% 10x,"fast=5, slow=20",False,-7.79,-5.22,1.391,-87.1,25,32.0,15.6144,-10.485,7.2,0.7,50.0,15.4,9220.77,10.27
+RSI Reversal,AUDUSD=X,10d SL1.5% 3% 10x,"rsi_period=14, oversold=30, overbought=70",False,-9.83,-6.61,0.979,-65.36,8,50.0,11.682,-12.2988,6.4,0.81,66.7,40.0,9016.74,10.31
+RSI Reversal,EURJPY=X,10d SL1.5% 3% 10x,"rsi_period=14, oversold=25, overbought=75",False,-11.76,-7.93,0.43,-59.88,3,33.3,10.3261,-10.7741,10.0,0.4,0.0,33.3,8824.33,14.92
+Momentum Breakout,EURJPY=X,5d SL1% TP2% 10x,"lookback=10, vol_mult=1.0",False,-12.28,-8.29,1.5,-68.51,19,47.4,8.9647,-8.4908,3.6,0.87,50.0,33.3,8772.11,14.92
+Inside Bar Breakout,GBPJPY=X,7d SL0.7% 1.5% 10x,,False,-12.63,-8.53,1.211,-58.28,12,33.3,10.6363,-6.5021,4.2,0.74,20.0,42.9,8737.14,10.27
+Momentum Breakout,USDCHF=X,10d SL1.5% 3% 10x,"lookback=10, vol_mult=1.0",False,-13.34,-9.03,1.242,-76.42,16,31.2,7.4023,-9.9322,8.4,0.28,28.6,33.3,8665.62,-11.84
+SMA Crossover,AUDUSD=X,10d SL1% TP2% 10x,"fast=10, slow=50",False,-13.56,-9.18,0.909,-66.04,10,30.0,15.4155,-7.8718,6.7,0.75,40.0,20.0,8643.76,10.31
+Keltner Breakout,EURUSD=X,10d SL1% TP2% 10x,"ema_period=15, atr_period=10, atr_mult=1.0",False,-14.08,-9.54,1.797,-78.07,33,33.3,12.3575,-9.0949,5.6,0.57,45.0,15.4,8591.77,11.29
+Keltner Breakout,AUDUSD=X,7d SL0.7% TP1.5%,"ema_period=20, atr_period=14, atr_mult=1.0",False,-16.37,-11.14,2.034,-57.42,56,21.4,1.148,-0.6981,2.6,0.42,27.0,10.5,8362.93,10.31
+MACD Crossover,USDCHF=X,7d SL0.7% 1.5% 10x,"fast=8, slow=17, signal_period=9",False,-20.04,-13.73,1.932,-73.13,44,40.9,9.2549,-6.6796,3.8,0.85,36.4,45.5,7996.37,-11.84
+Z-Score Reversion,EURGBP=X,10d SL1.5% 3% 10x,"lookback=20, z_entry=1.5",False,-22.28,-15.34,1.53,-71.49,29,44.8,7.103,-6.6592,8.4,0.72,63.6,33.3,7771.81,4.22
+SMA Crossover,USDCAD=X,7d SL0.7% 1.5% 10x,"fast=5, slow=30",False,-23.29,-16.06,1.539,-72.16,26,34.6,9.3719,-6.0934,4.5,0.72,30.8,38.5,7671.46,-1.17
+MACD Crossover,GBPUSD=X,10d SL1.5% 3% 10x,"fast=12, slow=26, signal_period=9",False,-23.66,-16.34,1.299,-69.57,29,48.3,7.6644,-8.2008,7.6,0.8,42.9,53.3,7633.51,6.76
+Momentum Breakout,GBPJPY=X,7d SL0.7% 1.5% 10x,"lookback=10, vol_mult=1.0",False,-25.35,-17.56,1.333,-66.64,16,31.2,9.3735,-6.5247,3.4,0.61,41.7,0.0,7464.87,10.27
+Inside Bar Breakout,USDCAD=X,7d SL0.7% 1.5% 10x,,False,-26.25,-18.21,1.273,-66.36,16,31.2,6.7023,-5.6021,5.4,0.5,33.3,25.0,7375.43,-1.17
+Triple EMA,NZDUSD=X,10d SL1.5% 3% 10x,"fast=3, medium=10, slow=30",False,-32.59,-22.93,1.82,-80.66,30,36.7,13.6091,-12.1735,7.0,0.52,26.7,46.7,6741.35,2.11
+Keltner Breakout,USDJPY=X,10d SL1.5% 3% 10x,"ema_period=20, atr_period=14, atr_mult=1.0",False,-38.4,-27.38,1.636,-89.42,29,34.5,11.0375,-10.9658,7.5,0.55,33.3,36.4,6160.34,3.28
+Keltner Breakout,NZDUSD=X,7d SL0.7% 1.5% 10x,"ema_period=20, atr_period=14, atr_mult=1.0",False,-39.03,-27.88,2.103,-87.25,61,27.9,11.8975,-6.8266,2.9,0.55,31.0,25.0,6097.05,2.11
+Bollinger Reversal,USDCHF=X,10d SL1.5% 3% 10x,"period=15, num_std=2.0",False,-39.11,-27.94,1.324,-76.71,24,41.7,12.7482,-11.2134,7.9,0.65,21.4,70.0,6089.33,-11.84
+Z-Score Reversion,USDCHF=X,10d SL1.5% 3% 10x,"lookback=15, z_entry=2.0",False,-39.11,-27.94,1.324,-76.71,24,41.7,12.7482,-11.2134,7.9,0.65,21.4,70.0,6089.33,-11.84
+Momentum Breakout,NZDUSD=X,7d SL0.7% 1.5% 10x,"lookback=10, vol_mult=1.0",False,-40.96,-29.39,2.011,-85.37,33,18.2,12.4148,-6.9729,2.8,0.24,20.0,16.7,5903.84,2.11
+MACD Crossover,NZDUSD=X,10d SL1.5% 3% 10x,"fast=8, slow=21, signal_period=7",False,-41.41,-29.75,1.438,-81.79,45,35.6,14.1818,-10.7081,6.0,0.58,36.4,34.8,5859.11,2.11
+Momentum Breakout,USDJPY=X,10d SL1.5% 3% 10x,"lookback=20, vol_mult=1.0",False,-45.26,-32.83,1.068,-74.35,11,36.4,6.6429,-11.8239,7.7,0.31,28.6,50.0,5474.38,3.28
+Triple EMA,AUDUSD=X,10d SL1.5% 3% 10x,"fast=5, medium=10, slow=20",False,-45.88,-33.33,1.625,-87.77,29,34.5,12.5545,-12.1321,6.4,0.41,35.0,33.3,5412.46,10.31
+Momentum Breakout,GBPUSD=X,10d SL1% TP2% 10x,"lookback=10, vol_mult=1.0",False,-50.28,-36.97,1.58,-80.36,25,40.0,7.7538,-9.2818,7.0,0.47,46.7,30.0,4971.97,6.76
+MACD Crossover,AUDUSD=X,10d SL1.5% 3% 10x,"fast=16, slow=30, signal_period=9",False,-52.48,-38.82,1.172,-90.91,34,29.4,12.1902,-10.0429,6.0,0.31,41.2,17.6,4752.27,10.31
+MACD Crossover,EURJPY=X,10d SL1% TP2% 10x,"fast=5, slow=15, signal_period=5",False,-60.06,-45.46,1.119,-89.71,64,29.7,10.8997,-6.1318,4.9,0.77,37.5,21.9,3993.87,14.92
+MACD Crossover,EURUSD=X,10d SL1.5% 3% 10x,"fast=16, slow=30, signal_period=9",False,-60.45,-45.81,1.121,-80.06,43,34.9,8.3941,-7.359,5.6,0.51,38.1,31.8,3954.81,11.29
+Keltner Breakout,GBPUSD=X,10d SL1.5% 3% 10x,"ema_period=15, atr_period=10, atr_mult=1.0",False,-60.96,-46.28,1.554,-80.14,31,41.9,7.8137,-10.1463,8.5,0.47,41.2,42.9,3903.53,6.76
+SMA Crossover,GBPUSD=X,10d SL1.5% 3% 10x,"fast=5, slow=20",False,-64.07,-49.14,1.26,-81.94,25,36.0,9.7565,-11.0537,7.2,0.36,41.7,30.8,3592.96,6.76
+SMA Crossover,NZDUSD=X,10d SL1.5% 3% 10x,"fast=5, slow=20",False,-65.68,-50.66,1.358,-88.89,29,37.9,10.1554,-11.253,6.8,0.34,50.0,26.7,3431.56,2.11
+Momentum Breakout,AUDUSD=X,7d SL0.7% 1.5% 10x,"lookback=10, vol_mult=1.0",False,-70.09,-54.94,1.771,-85.62,29,17.2,10.0138,-6.9756,2.6,0.18,29.4,0.0,2990.78,10.31
+Keltner Breakout,GBPJPY=X,10d SL1% TP2% 10x,"ema_period=15, atr_period=10, atr_mult=1.0",False,-71.26,-56.11,1.683,-87.89,29,27.6,8.3618,-8.7687,5.9,0.34,40.0,0.0,2874.47,10.27
