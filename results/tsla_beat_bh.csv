@@ -1,0 +1,31 @@
+Strategy,Risk_Config,Params,Beats_BH,OOS_BH_pct,OOS_total_return_pct,OOS_annual_return_pct,OOS_sharpe_ratio,OOS_max_drawdown_pct,OOS_total_trades,OOS_win_rate_pct,OOS_avg_win_pct,OOS_avg_loss_pct,OOS_profit_factor,OOS_final_equity,OOS_buy_hold_return_pct
+Trend Rider,Trail 20%,"ema_period=60, atr_period=10, atr_mult=3.0, reentry_mult=1.0",True,24.84714810045041,52.95,32.47,0.89,-30.89,4,50.0,26.22,-6.33,3.05,15294.96,24.85
+Crash Avoider,Trail 15%,"trend_sma=40, confirm_days=3, rsi_exit=45, rsi_reentry=45",True,24.84714810045041,42.91,26.65,0.893,-24.5,6,33.3,19.85,-2.64,3.15,14291.14,24.85
+Crash Avoider,No stops,"trend_sma=40, confirm_days=5, rsi_exit=45, rsi_reentry=45",True,24.84714810045041,36.46,22.84,0.755,-25.86,4,50.0,17.24,-5.58,2.85,13646.29,24.85
+Crash Avoider,Trail 30%,"trend_sma=40, confirm_days=5, rsi_exit=45, rsi_reentry=45",True,24.84714810045041,36.46,22.84,0.755,-25.86,4,50.0,17.24,-5.58,2.85,13646.29,24.85
+Crash Avoider,Trail 20%,"trend_sma=40, confirm_days=5, rsi_exit=45, rsi_reentry=45",True,24.84714810045041,27.14,17.22,0.632,-30.71,5,40.0,16.7,-5.65,1.81,12714.11,24.85
+Dual Regime,Trail 20%,"fast_sma=40, slow_sma=100, reentry_buffer=1.0",True,24.84714810045041,26.27,16.69,0.674,-18.26,1,100.0,26.98,0.0,inf,12626.86,24.85
+Dip Buyer,Trail 15%,"fast_ema=5, slow_ema=30, dip_pct=3, trend_lookback=5",True,24.84714810045041,25.1,15.97,0.613,-28.42,8,50.0,10.22,-6.8,1.42,12509.99,24.85
+Crash Avoider,Trail 10%,"trend_sma=40, confirm_days=2, rsi_exit=45, rsi_reentry=45",False,24.84714810045041,24.41,15.55,0.649,-25.93,12,33.3,16.83,-4.54,1.53,12441.2,24.85
+Dip Buyer,Trail 10%,"fast_ema=10, slow_ema=30, dip_pct=3, trend_lookback=5",False,24.84714810045041,23.36,14.9,0.583,-24.9,13,38.5,12.67,-5.36,1.31,12336.35,24.85
+Dual Regime,Trail 15%,"fast_sma=40, slow_sma=100, reentry_buffer=1.0",False,24.84714810045041,22.49,14.37,0.646,-21.18,3,33.3,35.29,-4.78,3.02,12249.26,24.85
+Dip Buyer,Trail 20%,"fast_ema=5, slow_ema=30, dip_pct=3, trend_lookback=5",False,24.84714810045041,21.36,13.66,0.539,-23.47,7,57.1,7.67,-6.83,1.38,12135.77,24.85
+Crash Avoider,Trail 25%,"trend_sma=40, confirm_days=2, rsi_exit=45, rsi_reentry=45",False,24.84714810045041,21.08,13.49,0.541,-30.73,7,28.6,12.98,-2.99,1.55,12108.06,24.85
+Dip Buyer,No stops,"fast_ema=5, slow_ema=30, dip_pct=3, trend_lookback=5",False,24.84714810045041,17.79,11.44,0.483,-25.11,6,50.0,9.3,-6.83,1.22,11778.81,24.85
+Dip Buyer,Trail 30%,"fast_ema=5, slow_ema=30, dip_pct=3, trend_lookback=5",False,24.84714810045041,17.79,11.44,0.483,-25.11,6,50.0,9.3,-6.83,1.22,11778.81,24.85
+SMA Crossover,No stops,"fast_period=5, slow_period=30",False,24.84714810045041,15.12,9.76,0.449,-26.07,8,25.0,18.19,-4.49,1.21,11511.88,24.85
+SMA Crossover,Trail 30%,"fast_period=5, slow_period=30",False,24.84714810045041,15.12,9.76,0.449,-26.07,8,25.0,18.19,-4.49,1.21,11511.88,24.85
+Dip Buyer,Trail 25%,"fast_ema=5, slow_ema=30, dip_pct=3, trend_lookback=5",False,24.84714810045041,13.45,8.71,0.415,-27.82,7,42.9,8.58,-5.53,1.02,11345.17,24.85
+SMA Crossover,Trail 15%,"fast_period=5, slow_period=75",False,24.84714810045041,13.17,8.53,0.444,-18.11,4,50.0,10.5,-5.8,1.62,11316.54,24.85
+Trend Rider,Trail 15%,"ema_period=60, atr_period=20, atr_mult=2.0, reentry_mult=1.0",False,24.84714810045041,12.73,8.25,0.404,-32.45,8,37.5,16.5,-8.04,1.03,11273.18,24.85
+Dual Regime,Trail 25%,"fast_sma=75, slow_sma=150, reentry_buffer=1.0",False,24.84714810045041,11.24,7.3,0.401,-23.21,1,100.0,11.57,0.0,inf,11124.27,24.85
+SMA Crossover,Trail 20%,"fast_period=5, slow_period=30",False,24.84714810045041,7.17,4.69,0.309,-30.83,8,25.0,14.56,-4.49,0.93,10716.51,24.85
+Dual Regime,Trail 30%,"fast_sma=75, slow_sma=150, reentry_buffer=1.0",False,24.84714810045041,4.01,2.64,0.233,-28.2,1,100.0,4.13,0.0,inf,10401.33,24.85
+Dual Regime,No stops,"fast_sma=75, slow_sma=150, reentry_buffer=1.0",False,24.84714810045041,3.22,2.12,0.215,-28.75,1,100.0,3.31,0.0,inf,10321.88,24.85
+SMA Crossover,Trail 25%,"fast_period=5, slow_period=30",False,24.84714810045041,0.69,0.46,0.195,-35.21,8,12.5,26.18,-4.35,0.72,10069.34,24.85
+Trend Rider,Trail 10%,"ema_period=60, atr_period=10, atr_mult=1.5, reentry_mult=1.0",False,24.84714810045041,0.67,0.44,0.151,-30.63,13,30.8,10.97,-4.42,1.02,10066.82,24.85
+Dual Regime,Trail 10%,"fast_sma=40, slow_sma=100, reentry_buffer=1.0",False,24.84714810045041,-2.05,-1.36,-0.024,-14.21,3,66.7,2.26,-6.52,0.69,9795.25,24.85
+SMA Crossover,Trail 10%,"fast_period=5, slow_period=30",False,24.84714810045041,-3.4,-2.26,0.057,-26.03,9,22.2,21.07,-5.73,0.91,9659.94,24.85
+Trend Rider,No stops,"ema_period=30, atr_period=14, atr_mult=1.5, reentry_mult=0",False,24.84714810045041,-13.92,-9.44,-0.004,-47.82,7,28.6,17.77,-10.75,0.51,8607.72,24.85
+Trend Rider,Trail 30%,"ema_period=30, atr_period=14, atr_mult=1.5, reentry_mult=0",False,24.84714810045041,-13.92,-9.44,-0.004,-47.82,7,28.6,17.77,-10.75,0.51,8607.72,24.85
+Trend Rider,Trail 25%,"ema_period=30, atr_period=14, atr_mult=1.5, reentry_mult=0",False,24.84714810045041,-17.65,-12.06,-0.058,-46.04,7,28.6,13.34,-10.26,0.4,8234.87,24.85
