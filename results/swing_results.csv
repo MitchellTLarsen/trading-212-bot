@@ -1,0 +1,104 @@
+Strategy,Ticker,Swing_Config,Params,Beats_BH,OOS_BH,OOS_total_return_pct,OOS_annual_return_pct,OOS_sharpe_ratio,OOS_max_drawdown_pct,OOS_total_trades,OOS_win_rate_pct,OOS_avg_win_pct,OOS_avg_loss_pct,OOS_avg_hold_days,OOS_profit_factor,OOS_time_in_market_pct,OOS_final_equity,OOS_buy_hold_pct
+Gap Down Reversal,AVGO,10d SL5% noTP,"gap_pct=1.5, trend_sma=100",False,163.3461560236014,59.78,36.35,1.612,-11.35,6,83.3,10.53,-5.05,8.5,7.82,13.5,15977.67,163.35
+Weekly Momentum Burst,AAPL,10d SL5% TP10%,"lookback=5, min_return=2, vol_mult=1.3",False,36.8193630073536,27.55,17.47,1.239,-13.52,11,72.7,4.59,-3.58,9.2,3.69,26.8,12755.08,36.82
+Weekly Momentum Burst,META,7d SL4% TP8%,"lookback=3, min_return=2, vol_mult=1.3",True,14.167004954597395,27.21,17.27,1.147,-11.18,12,58.3,6.53,-3.74,4.8,2.37,15.1,12721.4,14.17
+Weekly Momentum Burst,AVGO,10d SL5% noTP,"lookback=3, min_return=2, vol_mult=1.3",False,163.3461560236014,26.87,17.05,0.801,-15.1,11,63.6,6.77,-5.05,8.4,2.14,24.4,12686.83,163.35
+Weekly Momentum Burst,GOOGL,10d SL5% TP10%,"lookback=5, min_return=3, vol_mult=1.5",False,138.1541912850348,26.71,16.96,1.078,-11.73,9,66.7,5.02,-1.68,9.1,6.11,21.8,12671.39,138.15
+ATR Breakout,GOOGL,10d SL5% noTP,"atr_period=10, atr_mult=1.0, lookback=15",False,138.1541912850348,22.28,14.23,1.644,-3.3,3,100.0,7.03,0.0,10.0,inf,8.0,12227.78,138.15
+Consecutive Down Days,NVDA,10d SL5% noTP,"n_days=3, trend_sma=100",False,50.99327379239473,19.44,12.47,0.776,-12.78,9,44.4,9.41,-3.48,8.9,1.99,21.2,11943.6,50.99
+Consecutive Down Days,GOOGL,10d SL3% TP8%,"n_days=4, trend_sma=200",False,138.1541912850348,16.96,10.92,1.167,-4.58,8,62.5,5.2,-3.05,7.1,2.78,15.1,11696.39,138.15
+Consecutive Down Days,WMT,10d SL3% TP8%,"n_days=3, trend_sma=200",False,33.54823760359986,15.24,9.84,1.088,-7.76,8,75.0,3.78,-3.05,7.8,3.52,16.4,11523.59,33.55
+Dip and Rip,GOOGL,10d SL5% TP10%,"dip_pct=4, rsi_period=5, rsi_threshold=30, trend_sma=50",False,138.1541912850348,13.74,8.89,1.202,-5.94,4,75.0,6.22,-5.05,8.8,3.29,9.3,11373.62,138.15
+Dip and Rip,AVGO,10d SL5% noTP,"dip_pct=5, rsi_period=7, rsi_threshold=35, trend_sma=50",False,163.3461560236014,13.68,8.86,0.853,-6.04,2,100.0,6.68,0.0,10.0,inf,5.3,11368.39,163.35
+Bollinger Snap,TSLA,10d SL5% noTP,"bb_period=25, bb_std=2.0, trend_sma=100",False,25.397098129387395,10.87,7.06,1.025,-4.22,1,100.0,11.25,0.0,10.0,inf,2.7,11086.54,25.4
+Gap Down Reversal,META,10d SL5% noTP,"gap_pct=1.5, trend_sma=100",False,14.167004954597395,10.41,6.77,1.409,-1.99,2,100.0,5.24,0.0,10.0,inf,5.3,11041.43,14.17
+RSI Extreme Bounce,WMT,10d SL5% TP10%,"rsi_period=5, rsi_threshold=20, trend_sma=100",False,33.54823760359986,9.68,6.3,1.66,-2.21,3,100.0,3.16,0.0,10.0,inf,8.0,10968.02,33.55
+Consecutive Down Days,COST,10d SL3% TP8%,"n_days=4, trend_sma=200",True,4.066694408667759,9.39,6.12,1.127,-2.84,3,100.0,3.57,0.0,10.0,inf,8.0,10939.4,4.07
+Dip and Rip,LLY,10d SL5% noTP,"dip_pct=5, rsi_period=7, rsi_threshold=30, trend_sma=100",False,52.27827752708516,8.53,5.57,1.387,-1.89,1,100.0,8.69,0.0,10.0,inf,2.7,10853.22,52.28
+RSI Extreme Bounce,GOOGL,3d SL2% TP4%,"rsi_period=3, rsi_threshold=15, trend_sma=50",False,138.1541912850348,8.15,5.32,0.888,-3.26,6,66.7,3.07,-2.05,2.5,2.91,4.0,10815.35,138.15
+Weekly Momentum Burst,LLY,10d SL3% TP8%,"lookback=3, min_return=2, vol_mult=1.3",False,52.27827752708516,8.07,5.27,0.402,-15.0,15,40.0,6.09,-3.05,4.3,1.3,17.0,10807.39,52.28
+Z-Score Mean Reversion,WMT,10d SL5% noTP,"lookback=30, z_threshold=-2.0, trend_sma=100",False,33.54823760359986,8.04,5.25,1.532,-2.03,2,100.0,3.97,0.0,10.0,inf,5.3,10803.84,33.55
+ATR Breakout,COST,10d SL5% TP10%,"atr_period=10, atr_mult=1.0, lookback=15",True,4.066694408667759,6.61,4.33,1.712,-0.63,1,100.0,7.24,0.0,10.0,inf,2.7,10661.44,4.07
+ATR Breakout,AVGO,10d SL5% TP10%,"atr_period=14, atr_mult=1.0, lookback=20",False,163.3461560236014,6.56,4.29,0.441,-6.69,2,100.0,3.29,0.0,10.0,inf,5.3,10656.0,163.35
+ATR Breakout,NVDA,10d SL5% noTP,"atr_period=10, atr_mult=1.0, lookback=15",False,50.99327379239473,6.2,4.06,0.633,-3.15,2,100.0,3.1,0.0,10.0,inf,5.3,10620.03,50.99
+Consecutive Down Days,AVGO,10d SL5% noTP,"n_days=4, trend_sma=100",False,163.3461560236014,5.42,3.55,0.481,-8.68,3,66.7,5.39,-5.05,9.0,2.05,7.2,10542.03,163.35
+Bollinger Snap,WMT,10d SL5% noTP,"bb_period=25, bb_std=2.0, trend_sma=100",False,33.54823760359986,5.12,3.36,1.427,-1.26,1,100.0,5.13,0.0,10.0,inf,2.7,10512.49,33.55
+Gap Down Reversal,AMZN,7d SL4% TP8%,"gap_pct=1.5, trend_sma=50",False,39.001626819799526,5.08,3.33,0.504,-5.17,4,75.0,1.78,-0.25,7.0,21.32,7.4,10508.11,39.0
+Gap Down Reversal,LLY,7d SL4% TP8%,"gap_pct=1.5, trend_sma=50",False,52.27827752708516,4.85,3.19,0.545,-6.7,3,66.7,4.82,-4.05,5.3,2.25,4.2,10485.42,52.28
+Consecutive Down Days,MSFT,5d SL3% noTP,"n_days=4, trend_sma=50",True,3.610388550583199,4.72,3.1,0.677,-3.84,3,66.7,2.25,-3.05,4.3,1.48,3.4,10471.8,3.61
+ATR Breakout,JPM,7d SL4% TP8%,"atr_period=14, atr_mult=1.0, lookback=20",False,23.08832509980494,4.52,2.97,1.253,-0.69,1,100.0,4.56,0.0,7.0,inf,1.9,10451.98,23.09
+RSI Extreme Bounce,AVGO,10d SL5% noTP,"rsi_period=3, rsi_threshold=15, trend_sma=50",False,163.3461560236014,4.41,2.9,0.553,-4.85,2,100.0,2.2,0.0,10.0,inf,5.3,10440.76,163.35
+Bollinger Snap,NVDA,10d SL5% noTP,"bb_period=20, bb_std=2.0, trend_sma=100",False,50.99327379239473,4.4,2.89,0.628,-4.06,1,100.0,4.46,0.0,10.0,inf,2.7,10439.92,50.99
+Z-Score Mean Reversion,NVDA,10d SL5% noTP,"lookback=20, z_threshold=-2.0, trend_sma=100",False,50.99327379239473,4.4,2.89,0.628,-4.06,1,100.0,4.46,0.0,10.0,inf,2.7,10439.92,50.99
+Weekly Momentum Burst,COST,10d SL3% TP8%,"lookback=5, min_return=2, vol_mult=1.3",False,4.066694408667759,3.86,2.54,0.366,-6.95,7,28.6,7.59,-2.13,7.0,1.35,13.0,10385.91,4.07
+Z-Score Mean Reversion,MSFT,3d SL2% TP4%,"lookback=20, z_threshold=-1.5, trend_sma=50",True,3.610388550583199,3.84,2.52,1.05,-0.6,2,100.0,1.98,0.0,2.5,inf,1.3,10383.86,3.61
+Gap Down Reversal,GOOGL,3d SL2% TP4%,"gap_pct=2, trend_sma=50",False,138.1541912850348,3.81,2.5,0.28,-7.04,6,50.0,2.74,-1.4,2.3,1.87,3.7,10380.53,138.15
+Z-Score Mean Reversion,TSLA,10d SL3% TP8%,"lookback=15, z_threshold=-1.5, trend_sma=50",False,25.397098129387395,3.68,2.42,0.283,-6.27,4,50.0,5.12,-3.05,3.8,1.6,4.0,10367.62,25.4
+ATR Breakout,MSFT,10d SL5% TP10%,"atr_period=14, atr_mult=1.5, lookback=10",False,3.610388550583199,3.5,2.3,0.373,-4.43,3,66.7,3.02,-2.44,10.0,2.42,8.0,10350.13,3.61
+Dip and Rip,TSLA,10d SL5% noTP,"dip_pct=5, rsi_period=7, rsi_threshold=30, trend_sma=100",False,25.397098129387395,3.45,2.27,0.3,-8.15,2,50.0,9.19,-5.05,7.0,1.63,3.7,10344.77,25.4
+Bollinger Snap,JPM,10d SL5% noTP,"bb_period=25, bb_std=2.0, trend_sma=100",False,23.08832509980494,3.26,2.15,0.731,-2.67,1,100.0,3.33,0.0,10.0,inf,2.7,10326.05,23.09
+Z-Score Mean Reversion,GOOGL,5d SL5% TP10%,"lookback=20, z_threshold=-2.0, trend_sma=100",False,138.1541912850348,2.75,1.81,0.362,-5.12,3,66.7,4.08,-5.05,4.7,1.52,3.7,10275.08,138.15
+Gap Down Reversal,AAPL,5d SL5% TP10%,"gap_pct=1.5, trend_sma=100",False,36.8193630073536,1.52,1.0,0.323,-1.75,1,100.0,1.55,0.0,5.0,inf,1.3,10151.61,36.82
+ATR Breakout,AMZN,5d SL3% TP6%,"atr_period=14, atr_mult=1.0, lookback=20",False,39.001626819799526,0.81,0.54,0.11,-7.39,6,50.0,2.42,-2.07,4.0,1.13,6.4,10081.11,39.0
+Z-Score Mean Reversion,AVGO,10d SL5% noTP,"lookback=15, z_threshold=-1.5, trend_sma=50",False,163.3461560236014,0.28,0.19,0.072,-7.9,1,100.0,0.29,0.0,10.0,inf,2.7,10028.07,163.35
+Dip and Rip,MSFT,3d SL2% TP4%,"dip_pct=3, rsi_period=7, rsi_threshold=30, trend_sma=50",False,3.610388550583199,0.01,0.01,0.015,-0.6,1,100.0,0.01,0.0,3.0,inf,0.8,10001.25,3.61
+RSI Extreme Bounce,NVDA,10d SL5% noTP,"rsi_period=3, rsi_threshold=15, trend_sma=50",False,50.99327379239473,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,50.99
+RSI Extreme Bounce,AMZN,7d SL4% TP8%,"rsi_period=5, rsi_threshold=15, trend_sma=100",False,39.001626819799526,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,39.0
+RSI Extreme Bounce,LLY,10d SL5% noTP,"rsi_period=7, rsi_threshold=25, trend_sma=100",False,52.27827752708516,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,52.28
+RSI Extreme Bounce,COST,7d SL4% TP8%,"rsi_period=5, rsi_threshold=15, trend_sma=100",False,4.066694408667759,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,4.07
+Bollinger Snap,MSFT,5d SL5% TP10%,"bb_period=25, bb_std=2.0, trend_sma=100",False,3.610388550583199,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,3.61
+Bollinger Snap,AMZN,3d SL2% TP4%,"bb_period=15, bb_std=2.0, trend_sma=50",False,39.001626819799526,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,39.0
+Bollinger Snap,COST,3d SL2% TP4%,"bb_period=15, bb_std=2.0, trend_sma=50",False,4.066694408667759,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,4.07
+Gap Down Reversal,MSFT,7d SL4% TP8%,"gap_pct=1.5, trend_sma=100",False,3.610388550583199,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,3.61
+Z-Score Mean Reversion,AMZN,10d SL5% TP10%,"lookback=20, z_threshold=-1.5, trend_sma=50",False,39.001626819799526,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,39.0
+Z-Score Mean Reversion,COST,3d SL2% TP4%,"lookback=15, z_threshold=-2.0, trend_sma=50",False,4.066694408667759,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,4.07
+Dip and Rip,AMZN,10d SL3% TP8%,"dip_pct=3, rsi_period=7, rsi_threshold=30, trend_sma=50",False,39.001626819799526,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,39.0
+Dip and Rip,COST,5d SL3% noTP,"dip_pct=5, rsi_period=7, rsi_threshold=30, trend_sma=100",False,4.066694408667759,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0,0.0,10000.0,4.07
+RSI Extreme Bounce,V,3d SL2% TP4%,"rsi_period=3, rsi_threshold=15, trend_sma=50",False,6.031446282851638,-0.3,-0.2,-0.021,-3.73,3,33.3,3.95,-2.05,2.0,0.93,1.6,9970.02,6.03
+RSI Extreme Bounce,JPM,3d SL2% TP4%,"rsi_period=3, rsi_threshold=15, trend_sma=50",False,23.08832509980494,-1.21,-0.8,-0.272,-3.97,4,50.0,1.46,-2.05,2.0,0.7,2.1,9878.6,23.09
+RSI Extreme Bounce,MSFT,5d SL3% noTP,"rsi_period=3, rsi_threshold=15, trend_sma=50",False,3.610388550583199,-1.42,-0.94,-0.959,-1.42,1,0.0,0.0,-1.47,5.0,0.0,1.3,9858.42,3.61
+ATR Breakout,LLY,10d SL3% TP8%,"atr_period=14, atr_mult=1.5, lookback=20",False,52.27827752708516,-1.7,-1.13,-0.249,-4.64,2,50.0,1.4,-3.05,8.0,0.42,4.2,9830.43,52.28
+RSI Extreme Bounce,META,10d SL5% TP10%,"rsi_period=5, rsi_threshold=20, trend_sma=100",False,14.167004954597395,-1.76,-1.17,-0.223,-3.71,1,0.0,0.0,-1.88,10.0,0.0,2.7,9824.08,14.17
+Bollinger Snap,LLY,10d SL3% TP8%,"bb_period=20, bb_std=2.0, trend_sma=100",False,52.27827752708516,-1.89,-1.26,-0.057,-10.44,2,50.0,1.14,-3.05,6.0,0.36,3.2,9810.72,52.28
+Bollinger Snap,GOOGL,5d SL5% TP10%,"bb_period=25, bb_std=2.0, trend_sma=100",False,138.1541912850348,-2.41,-1.6,-0.353,-5.11,2,50.0,2.81,-5.05,4.0,0.52,2.1,9759.44,138.15
+Weekly Momentum Burst,WMT,10d SL5% TP10%,"lookback=5, min_return=2, vol_mult=1.3",False,33.54823760359986,-2.45,-1.63,-0.149,-15.22,8,37.5,3.79,-2.68,9.9,0.82,21.0,9754.75,33.55
+Dip and Rip,JPM,10d SL5% noTP,"dip_pct=5, rsi_period=7, rsi_threshold=30, trend_sma=100",False,23.08832509980494,-2.46,-1.64,-0.472,-4.64,1,0.0,0.0,-2.51,10.0,0.0,2.7,9753.76,23.09
+Gap Down Reversal,TSLA,3d SL2% TP4%,"gap_pct=2, trend_sma=50",False,25.397098129387395,-2.49,-1.66,-0.172,-7.87,7,28.6,3.95,-2.05,1.4,0.76,2.7,9750.63,25.4
+Weekly Momentum Burst,AMZN,3d SL2% TP4%,"lookback=5, min_return=3, vol_mult=1.5",False,39.001626819799526,-2.55,-1.69,-0.196,-9.55,8,37.5,2.65,-2.05,2.2,0.74,4.8,9745.11,39.0
+Dip and Rip,WMT,3d SL2% TP4%,"dip_pct=3, rsi_period=7, rsi_threshold=30, trend_sma=50",False,33.54823760359986,-2.75,-1.83,-0.724,-3.37,2,0.0,0.0,-1.39,2.0,0.0,1.1,9725.31,33.55
+Gap Down Reversal,COST,10d SL3% TP8%,"gap_pct=1.5, trend_sma=100",False,4.066694408667759,-2.82,-1.88,-0.895,-3.62,1,0.0,0.0,-2.83,10.0,0.0,2.7,9717.55,4.07
+Gap Down Reversal,V,10d SL3% TP8%,"gap_pct=1.5, trend_sma=50",False,6.031446282851638,-2.85,-1.89,-0.354,-4.68,3,33.3,3.22,-3.05,4.7,0.52,3.7,9715.09,6.03
+ATR Breakout,TSLA,5d SL3% noTP,"atr_period=14, atr_mult=1.0, lookback=20",False,25.397098129387395,-2.97,-1.97,-0.31,-6.3,1,0.0,0.0,-3.05,1.0,0.0,0.3,9703.17,25.4
+Bollinger Snap,AVGO,10d SL3% TP8%,"bb_period=15, bb_std=2.0, trend_sma=50",False,163.3461560236014,-3.0,-2.0,-0.136,-7.9,1,0.0,0.0,-3.05,2.0,0.0,0.5,9699.94,163.35
+Bollinger Snap,AAPL,10d SL3% TP8%,"bb_period=25, bb_std=2.0, trend_sma=100",False,36.8193630073536,-3.04,-2.03,-1.436,-3.04,1,0.0,0.0,-3.05,8.0,0.0,2.1,9695.51,36.82
+Gap Down Reversal,JPM,10d SL3% TP8%,"gap_pct=1.5, trend_sma=100",False,23.08832509980494,-3.41,-2.27,-0.759,-4.64,2,0.0,0.0,-1.76,5.5,0.0,2.9,9659.1,23.09
+Bollinger Snap,V,10d SL5% TP10%,"bb_period=15, bb_std=2.0, trend_sma=50",False,6.031446282851638,-3.49,-2.32,-0.566,-5.14,1,0.0,0.0,-3.58,10.0,0.0,2.7,9651.38,6.03
+Weekly Momentum Burst,JPM,5d SL5% TP10%,"lookback=5, min_return=4, vol_mult=1.3",False,23.08832509980494,-3.61,-2.41,-0.517,-7.81,4,50.0,2.52,-4.28,4.8,0.58,5.0,9638.73,23.09
+ATR Breakout,WMT,10d SL3% TP8%,"atr_period=10, atr_mult=1.0, lookback=15",False,33.54823760359986,-3.62,-2.41,-0.437,-9.22,4,25.0,5.75,-3.05,6.8,0.61,7.2,9637.7,33.55
+Consecutive Down Days,V,10d SL5% TP10%,"n_days=3, trend_sma=200",False,6.031446282851638,-3.79,-2.52,-0.41,-8.33,3,66.7,0.62,-5.05,9.0,0.25,7.2,9620.94,6.03
+Consecutive Down Days,TSLA,5d SL3% noTP,"n_days=3, trend_sma=200",False,25.397098129387395,-3.79,-2.52,-0.206,-15.15,8,37.5,3.91,-3.05,3.1,0.74,6.6,9621.21,25.4
+ATR Breakout,META,3d SL2% TP4%,"atr_period=14, atr_mult=1.5, lookback=20",False,14.167004954597395,-3.96,-2.64,-0.633,-5.47,2,0.0,0.0,-2.05,1.5,0.0,0.8,9604.02,14.17
+Consecutive Down Days,AAPL,3d SL2% TP4%,"n_days=3, trend_sma=50",False,36.8193630073536,-4.07,-2.71,-0.549,-9.08,8,37.5,1.46,-1.68,2.4,0.49,5.0,9593.16,36.82
+Consecutive Down Days,JPM,10d SL3% TP8%,"n_days=4, trend_sma=200",False,23.08832509980494,-4.6,-3.07,-0.324,-9.98,5,40.0,2.26,-3.05,8.4,0.48,11.1,9539.69,23.09
+Weekly Momentum Burst,V,3d SL2% TP4%,"lookback=5, min_return=3, vol_mult=1.5",False,6.031446282851638,-4.86,-3.24,-1.462,-4.86,3,0.0,0.0,-1.68,2.7,0.0,2.1,9513.69,6.03
+ATR Breakout,V,3d SL2% TP4%,"atr_period=10, atr_mult=1.0, lookback=15",False,6.031446282851638,-4.91,-3.28,-1.598,-4.91,3,0.0,0.0,-1.68,2.7,0.0,2.1,9509.03,6.03
+Dip and Rip,AAPL,10d SL5% TP10%,"dip_pct=5, rsi_period=7, rsi_threshold=30, trend_sma=100",False,36.8193630073536,-4.96,-3.31,-1.062,-5.62,1,0.0,0.0,-5.05,7.0,0.0,1.9,9503.75,36.82
+ATR Breakout,AAPL,10d SL5% TP10%,"atr_period=10, atr_mult=1.0, lookback=15",False,36.8193630073536,-4.97,-3.32,-0.528,-8.0,3,33.3,0.22,-2.61,9.7,0.04,7.7,9502.83,36.82
+RSI Extreme Bounce,TSLA,10d SL5% noTP,"rsi_period=5, rsi_threshold=20, trend_sma=100",False,25.397098129387395,-4.98,-3.32,-0.704,-5.69,1,0.0,0.0,-5.05,4.0,0.0,1.1,9502.28,25.4
+Z-Score Mean Reversion,LLY,10d SL3% TP8%,"lookback=30, z_threshold=-2.0, trend_sma=100",False,52.27827752708516,-5.75,-3.84,-0.236,-10.74,2,0.0,0.0,-3.05,3.0,0.0,1.6,9425.36,52.28
+Dip and Rip,V,3d SL2% TP4%,"dip_pct=3, rsi_period=5, rsi_threshold=30, trend_sma=50",False,6.031446282851638,-5.89,-3.94,-0.874,-7.03,3,0.0,0.0,-2.05,2.3,0.0,1.9,9410.86,6.03
+Z-Score Mean Reversion,AAPL,10d SL3% TP8%,"lookback=20, z_threshold=-2.0, trend_sma=100",False,36.8193630073536,-5.93,-3.96,-1.688,-5.97,2,0.0,0.0,-3.05,5.0,0.0,2.7,9407.41,36.82
+Dip and Rip,NVDA,10d SL3% TP8%,"dip_pct=3, rsi_period=5, rsi_threshold=30, trend_sma=50",False,50.99327379239473,-5.98,-4.0,-0.861,-6.64,2,0.0,0.0,-3.05,4.5,0.0,2.4,9402.25,50.99
+Consecutive Down Days,LLY,10d SL5% noTP,"n_days=4, trend_sma=200",False,52.27827752708516,-7.48,-5.01,-0.284,-15.38,6,33.3,4.31,-4.06,8.5,0.51,13.5,9252.17,52.28
+Weekly Momentum Burst,NVDA,10d SL5% noTP,"lookback=5, min_return=5, vol_mult=1.2",False,50.99327379239473,-7.48,-5.01,-0.304,-12.02,8,50.0,3.28,-5.05,6.8,0.62,14.3,9251.91,50.99
+RSI Extreme Bounce,AAPL,7d SL4% TP8%,"rsi_period=7, rsi_threshold=25, trend_sma=100",False,36.8193630073536,-7.87,-5.28,-1.704,-7.91,2,0.0,0.0,-4.05,5.0,0.0,2.7,9213.13,36.82
+Gap Down Reversal,NVDA,10d SL5% noTP,"gap_pct=1.5, trend_sma=100",False,50.99327379239473,-7.97,-5.35,-0.424,-15.82,5,40.0,3.6,-5.05,6.2,0.48,8.2,9203.08,50.99
+Bollinger Snap,META,5d SL3% noTP,"bb_period=15, bb_std=2.0, trend_sma=50",False,14.167004954597395,-8.58,-5.76,-1.166,-8.83,3,0.0,0.0,-3.05,2.7,0.0,2.1,9141.97,14.17
+Z-Score Mean Reversion,JPM,10d SL5% noTP,"lookback=15, z_threshold=-1.5, trend_sma=50",False,23.08832509980494,-8.61,-5.79,-0.886,-10.76,4,25.0,0.76,-3.24,9.2,0.08,9.8,9138.6,23.09
+Z-Score Mean Reversion,V,10d SL3% TP8%,"lookback=20, z_threshold=-1.5, trend_sma=50",False,6.031446282851638,-8.77,-5.89,-1.027,-9.87,3,0.0,0.0,-3.05,2.3,0.0,1.9,9123.47,6.03
+Dip and Rip,META,5d SL3% noTP,"dip_pct=3, rsi_period=5, rsi_threshold=30, trend_sma=50",False,14.167004954597395,-8.85,-5.94,-0.414,-16.41,6,33.3,1.35,-3.05,3.3,0.21,5.3,9115.33,14.17
+Consecutive Down Days,META,7d SL4% TP8%,"n_days=3, trend_sma=200",False,14.167004954597395,-11.39,-7.69,-1.697,-11.71,3,0.0,0.0,-4.05,3.7,0.0,2.9,8860.83,14.17
+Z-Score Mean Reversion,META,5d SL3% noTP,"lookback=15, z_threshold=-1.5, trend_sma=50",False,14.167004954597395,-12.38,-8.37,-0.602,-16.28,7,28.6,0.73,-3.05,3.3,0.1,6.1,8762.03,14.17
+Consecutive Down Days,AMZN,10d SL5% noTP,"n_days=3, trend_sma=50",False,39.001626819799526,-13.5,-9.15,-1.164,-19.8,5,20.0,6.41,-5.05,6.0,0.32,8.0,8649.79,39.0
+Weekly Momentum Burst,MSFT,10d SL5% TP10%,"lookback=5, min_return=2, vol_mult=1.3",False,3.610388550583199,-14.5,-9.85,-0.574,-20.26,8,37.5,2.47,-4.53,8.0,0.31,17.0,8549.57,3.61
+Weekly Momentum Burst,TSLA,10d SL5% noTP,"lookback=5, min_return=2, vol_mult=1.3",False,25.397098129387395,-15.27,-10.38,-0.503,-17.16,8,12.5,14.03,-4.2,5.4,0.44,11.4,8473.41,25.4
